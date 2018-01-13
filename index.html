@@ -2,41 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
+	<title>Music Trivia</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <body>
 	
-	<div>
-
-		<h1>Trivial Trivia!</h1>
-
-		<p> In what year was Michael Jackson's "Bad" video released? </p>
-			<button>1991</button>
-			<button>1985</button>
-			<button>1987</button>
-			<button>1994</button>
-
-
-		<p> How many members were in the Original Destiny's Child? </p>
-			<button>Three</button>
-			<button>Four</button>
-			<button>Five</button>
-			<button>Two</button>
-
-		<p> Which Hip Hop Group made the hit song "Roses"? </p>
-			<button>Migos</button>
-			<button>Outkast</button>
-			<button>Sugar Hill Gang</button>
-			<button>Run DMC</button>
-
-		<p></p>
-			<button></button>
-			<button></button>
-			<button></button>
-			<button></button>
-
+	<div id="quizContainer" class="container">
+		<div class="title">Trivial Trivia!</div>
+		<div id="question" class="question"></div>
+		<label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+		<label class="option"><input type="radio" name="option" value="1"><span id="opt2"></span></label>
+		<label class="option"><input type="radio" name="option" value="1"><span id="opt3"></span></label>
+		<label class="option"><input type="radio" name="option" value="1"><span id="opt4"></span></label>
+		<button id="nextButton" class="next-btn"> Next Question </button>	
+	</div>
+	<div id="result" class="container result" style="display:none;">
+		
 	</div>
 
+	<div id"timer" class="timer"> Time Remaining:
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
